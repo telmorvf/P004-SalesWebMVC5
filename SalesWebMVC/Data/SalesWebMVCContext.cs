@@ -9,6 +9,8 @@ namespace SalesWebMVC.Data
 {
     public class SalesWebMVCContext : DbContext
     {
+        // mdb em
+        // C:\ProgramData\MySQL\MySQL Server 8.0\Data\sales
         public SalesWebMVCContext (DbContextOptions<SalesWebMVCContext> options)
             : base(options)
         {
