@@ -13,6 +13,8 @@ namespace SalesWebMVC.Models
         public double BaseSalary { get; set; }
 
         public  Department Department { get; set; }
+        public int DepartmentId { get; set; } // garante que o id do Department não pode ser null
+
         public  ICollection<SalesRecord> Sales { get; set; } = new List<SalesRecord>();
 
         public Seller()

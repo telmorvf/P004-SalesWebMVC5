@@ -30,7 +30,7 @@ namespace SalesWebMVC.Data
             Department d4 = new Department { Id=4, Name = "Books"};
         
             Seller s1 = new Seller(1, "Bob Brown", "bob@yopmail.com", new DateTime(1998, 4, 21), 1000.0, d1);
-            Seller s2 = new Seller(2, "Maria Green", "maria@yopmail.com", new DateTime(1979, 12, 31), 35000.0, d2);
+            Seller s2 = new Seller(2, "Maria Green", "maria@yopmail.com", new DateTime(1979, 12, 31), 3500.0, d2);
             Seller s3 = new Seller(3, "Alex Grey", "alex@yopmail.com", new DateTime(1988, 1,15), 2200.0, d1);
             Seller s4 = new Seller(4, "Martha Red", "martha@yopmail.com", new DateTime(1993, 11, 30), 3000.0, d4);
             Seller s5 = new Seller(5, "Donald Blue", "donald@yopmail.com", new DateTime(2000, 1, 9), 4000.0, d3);
