@@ -33,6 +33,7 @@ namespace SalesWebMVC
                     options.UseMySQL(Configuration.GetConnectionString("ConnectionMySQL")));
 
             services.AddScoped<SeedingService>();
+            services.AddScoped<DepartmentService>();
             services.AddScoped<SellerService>();
             
         }
