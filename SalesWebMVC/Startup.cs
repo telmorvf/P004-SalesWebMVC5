@@ -10,6 +10,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using SalesWebMVC.Data;
+using SalesWebMVC.Services;
 
 namespace SalesWebMVC
 {
@@ -32,6 +33,7 @@ namespace SalesWebMVC
                     options.UseMySQL(Configuration.GetConnectionString("ConnectionMySQL")));
 
             services.AddScoped<SeedingService>();
+            services.AddScoped<SellerService>();
             
         }
 
