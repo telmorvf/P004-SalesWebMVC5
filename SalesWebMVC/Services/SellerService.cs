@@ -1,11 +1,10 @@
-﻿using SalesWebMVC.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using SalesWebMVC.Data;
 using SalesWebMVC.Models;
+using SalesWebMVC.Services.Exceptions;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.EntityFrameworkCore;
-using SalesWebMVC.Services.Exceptions;
 using System.Threading.Tasks;
-using System.Threading;
 
 namespace SalesWebMVC.Services
 {
@@ -74,11 +73,11 @@ namespace SalesWebMVC.Services
                 _context.Update(obj);
                 await _context.SaveChangesAsync();
             }
-            catch(DbConcurrencyException e)
+            catch (DbConcurrencyException e)
             {
                 throw new DbConcurrencyException(e.Message);
             }
-            
+
 
         }
     }
